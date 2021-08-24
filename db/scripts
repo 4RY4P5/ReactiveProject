@@ -1,0 +1,7 @@
+create database LoanDetails;
+use LoanDetails;
+create table Loan( loan_Id int auto_increment primary key,loan_Type varchar(10),amount double,
+start_Date date, rate double,duration double, customer_Id int);
+
+insert into Loan values(1,"Housing",100000.00,'2019-10-11',2.5,5.0,1 );
+select * from Loan;
